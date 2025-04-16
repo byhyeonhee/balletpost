@@ -1,0 +1,108 @@
+/* App.css */
+
+body, .faq-bg {
+    background: #181818;
+    color: #fff;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  }
+  
+  .faq-bg {
+    padding: 48px 16px 32px 16px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .faq-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+    letter-spacing: -1px;
+    color: #fff;
+  }
+  
+  .faq-list {
+    width: 100%;
+  }
+  
+  .faq-group {
+    margin-bottom: 0;
+  }
+  
+  .faq-group-btn {
+    width: 100%;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 500;
+    text-align: left;
+    padding: 24px 0 24px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    outline: none;
+    transition: color 0.2s;
+  }
+  
+  .faq-arrow {
+    font-size: 1.3rem;
+    transition: transform 0.2s;
+    margin-left: 12px;
+    display: inline-block;
+  }
+  .faq-arrow.open {
+    transform: rotate(180deg);
+  }
+  
+  .faq-panel {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s cubic-bezier(0.4,0,0.2,1);
+    background: none;
+    padding-left: 0;
+  }
+  .faq-panel.open {
+    max-height: 800px;
+    transition: max-height 0.5s cubic-bezier(0.4,0,0.2,1);
+    margin-bottom: 12px;
+  }
+  
+  .faq-item {
+    margin: 0 0 18px 0;
+    padding-left: 8px;
+  }
+  
+  .faq-link {
+    color: #90caf9;
+    font-size: 1.08rem;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+  }
+  .faq-link:hover {
+    color: #fff;
+    text-decoration: underline;
+  }
+  
+  .faq-date {
+    font-size: 0.92rem;
+    color: #b0b8c1;
+    margin-top: 2px;
+    margin-left: 2px;
+  }
+  
+  .faq-divider {
+    border: none;
+    border-top: 1px solid #333;
+    margin: 0;
+  }
+  
+  .faq-empty {
+    color: #aaa;
+    text-align: center;
+    margin-top: 60px;
+    font-size: 1.1rem;
+  }  
